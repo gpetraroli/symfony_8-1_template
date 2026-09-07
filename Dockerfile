@@ -1,4 +1,4 @@
-FROM php:8.3-fpm AS php_upstream
+FROM php:8.4-fpm AS php_upstream
 FROM composer/composer:2-bin AS composer_upstream
 FROM caddy:2.7.6-alpine AS caddy_upstream
 
@@ -55,7 +55,7 @@ ENTRYPOINT ["/var/www/app/docker/entrypoint.prod.sh"]
 # =====================================================================
 # CADDY IMAGE =========================================================
 
-FROM caddy_upstream as caddy
+FROM caddy_upstream AS caddy
 
 # copy caddy config
 COPY docker/Caddyfile /etc/caddy/Caddyfile

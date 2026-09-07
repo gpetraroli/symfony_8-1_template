@@ -1,7 +1,7 @@
-# Symfony 7.2 web app template
+# Symfony 8.1 web app template
 
 ## Description
-This is a template for a Symfony 7.2 web app. It includes a basic setup for a Symfony 7.2 web app with a Docker environment.
+This is a template for a Symfony 8.1 web app. It includes a basic setup for a Symfony 8.1 web app with a Docker environment.
 
 ## Features
 - Docker environment for development
@@ -15,9 +15,9 @@ This is a template for a Symfony 7.2 web app. It includes a basic setup for a Sy
 ## Requirements
 - Docker
 - Docker Compose
+- PHP 8.4+ (provided by the Docker image)
 
 ## Installation
 1. Clone the repository
-2. Change environment variables for the docker build in the ```docker/.env``` file as needed
-3. Move to the ```docker``` directory inside the project
-4. Build project by running ```docker-compose up -d```
+2. Change environment variables for the docker build in the `.env` file as needed
+3. Build project by running `docker compose up -d`
